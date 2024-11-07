@@ -23,11 +23,10 @@
             ]
         };
 
+        console.log("Title of the first book: " + bookData.Books[0].title);
+        console.log("Author of the second book: " + bookData.Books[1].author);
         bookData.Books.forEach(book => {
-            console.log("Title: " + book.title);
-            console.log("Author: " + book.author);
-            console.log("Publication Year: " + book.publicationYear);
-            console.log("Genres: " + book.genres.join(", "));
+            console.log("Genres of '" + book.title + "': " + book.genres.join(", "));
         });
     </script>
 </body>
